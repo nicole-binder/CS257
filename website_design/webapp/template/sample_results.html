@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<script src="https://kit.fontawesome.com/03f85af316.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sample_results.css') }}">
+        <title>Time Usage in the United States</title>
+    </head>
+    <body bgcolor="#dfe6e9">
+		<header>
+                <figure class="banner-photo">
+                    	<img src= "{{ url_for('static', filename= 'Images/clock_picture_banner.jpg') }}", alt="Header Clock Picture">
+                </figure>
+				<nav>
+					<ul class="main-nav">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/aboutdata">ABOUT THE DATA</a></li>
+						<li><a href="https://weirdorconfusing.com/">CONTACT US</a></li>
+						<li><a href="https://ilooklikebarackobama.com/">MORE</a></li>
+					</ul>
+				</nav>
+
+			<div class="wrap">
+					<div class="search">
+						<input type="text" class="searchTerm" placeholder="Search...">
+						<button type="submit" class="searchButton">
+						<i class="fa fa-search"></i>
+						</button>
+					</div>
+			</div>
+		</header>
+
+
+
+        <div class="header-box">
+            <h1>SAMPLE RESULTS</h1>
+            <p>Home > Explore Data </p>
+        </div>
+
+
+        <div class="data-selection">
+            <h4 id="data">Data Settings</h4>
+            <p class = "data-header">Location (Required)</p>
+            <form action="/results" method = "GET">
+  				<label for="state">State </label>
+  				<select id="state" name="state">
+    				<option value="Alabama">AL</option>
+    				<option value="Alaska">AK</option>
+    				<option value="Arizona">AZ</option>
+					<option value="Arkansas">AR</option>
+					<option value="California">CA</option>
+					<option value="Colorado">CO</option>
+					<option value="Connecticut">CT</option>
+					<option value="Delaware">DE</option>
+					<option value="Florida">FL</option>
+					<option value="Georgia">GE</option>
+					<option value="Hawaii">HI</option>
+					<option value="Idaho">ID</option>
+					<option value="Illinois">IL</option>
+					<option value="Indiana">IN</option>
+					<option value="Iowa">IA</option>
+					<option value="Kansas">KS</option>
+					<option value="Kentucky">KY</option>
+					<option value="Louisiana">LA</option>
+					<option value="Maine">ME</option>
+					<option value="Maryland">MD</option>
+					<option value="Massachusetts">MA</option>
+					<option value="Michigan">MI</option>
+					<option value="Minnesota">MN</option>
+					<option value="Mississippi">MS</option>
+					<option value="Missouri">MO</option>
+					<option value="Montana">MT</option>
+					<option value="Nebraska">NE</option>
+					<option value="Nevada">NV</option>
+					<option value="New Hampshire">NH</option>
+					<option value="New Jersey">NJ</option>
+					<option value="New Mexico">NM</option>
+					<option value="New York">NY</option>
+					<option value="North Carolina">NC</option>
+					<option value="North Dakota">ND</option>
+					<option value="Ohio">OH</option>
+					<option value="Oklahoma">OK</option>
+					<option value="Oregon">OR</option>
+					<option value="Pennsylvania">PA</option>
+					<option value="Rhode Island">RI</option>
+					<option value="South Carolina">SC</option>
+					<option value="South Dakota">SD</option>
+					<option value="Tennessee">TN</option>
+					<option value="Texas">TX</option>
+					<option value="Utah">UT</option>
+					<option value="Vermont">VT</option>
+					<option value="Virginia">VA</option>
+					<option value="Washington">WA</option>
+					<option value="West Virginia">WV</option>
+					<option value="Wisconsin">WI</option>
+					<option value="Wyoming">WY</option>
+					<option value="American Samoa">AS</option>
+					<option value="Guam">GU</option>
+					<option value="Northern Mariana Islands">MP</option>
+					<option value="Puerto Rico">PR</option>
+					<option value="Virgin Islands">VI</option>
+  				</select>
+				<p class = "data-header">Activity (Required)</p>
+            	<select name="activity">
+  					<option value="Sleeping">Sleeping</option>
+  					<option value="Eating and Drinking">Eating and Drinking</option>
+  					<option value="Working">Working</option>
+				</select>
+            	<p class = "data-header">Start Year (Optional)</p>
+				<select name="start">
+					<option value="---">---</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+				</select>
+				<p class = "data-header">End Year (Optional)</p>
+				<select name="end">
+					<option value="---">---</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+				</select>
+				<input type="submit" value="Submit"> 
+			</form>
+        </div>
+
+		<div class = "graph">
+            <h2 id = "graph">{{type}} in {{state}} {{year}}</h2>
+            <figure class="data-graph">
+				<img src="/static/Images/results_plot.png" width="600" height="480">
+				<figcaption>Average Number of People Surveyed per Year: {{peopleSurveyed}}</figcaption>
+            </figure>
+        </div>
+
+        <footer>
+            <p>Copyright © 2020. Designed and developed by Maanya, Emilia, Cole and Nicole. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

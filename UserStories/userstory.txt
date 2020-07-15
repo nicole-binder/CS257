@@ -1,0 +1,62 @@
+User Story 1
+As a marketing associate, I want to see organized data on how the average American uses his time, so that I can target clients accordingly.
+
+**Acceptance Criteria**
+1) the user can see a graph showing trends on time usage with activities against time
+2) the user can input on a search option and look up specific activities that people might engage in
+3) the user can input on a search option to look up specific years' trends and data
+4) test for a valid search by year 
+5) test for an invalid search by year
+6) test for a valid search by activity
+7) test for an invalid search by activity
+
+
+User Story 2
+As a politician running for re-election, I want to look up the most recent time usage data specifically for my office state, so that I can formulate my campaign according to the interests of the majority in my constituency. 
+
+**Acceptance Criteria**
+1) inclusion and testing of a map interface to narrow down searches to a specific region
+2) the user can input on a search option to look up specific years' trends and data
+3) tests for a valid search by year
+4) test for an invalid search by year
+
+
+User Story 3
+As an educator, I want to  send an email to the website makers to calrify certain questions about the data set, so I can confidently use it for a class project that I'm assigning my students.
+
+**Acceptance Criteria**
+1) the user cannot hit Submit on an email unless all fields (Subject, Message, etc) have been completed
+2) the user should receive an acknowledgement email after the email has been submitted
+3) the user should have the option of attaching pictures or videos to the message content
+4) once the message has been submitted the submit button should change colors and a 'Message Sent' note should appear
+
+
+User Story 4
+As a data researcher, I want to view the statistics on the demographics of participants taking the time use survey, so that I can understand how the data might have bias
+
+**Acceptance Criteria**
+1) the user can see general statistics on what types of individuals participated in the survey
+2) the user can subset the demographics to certain questions of interest
+3) the user can not determine an individual's identity who has taken the survey (for privacy concerns)
+4) test for a valid search by question
+5) test for an invalid search by question
+
+
+User Story 5
+As a policy maker, I want to view time usage data of my state compared to the neighboring states, so that I can understand how my state can be improved
+
+**Acceptance Criteria**
+1) the user can choose two states and have only their data being displayed
+2) the user can easily see and understand the differences in the two data sets
+3) test for a valid state selection
+4) test for an invalid state selection
+
+
+User Story 6
+As a student, I want to easily cite the data, so that I won't have trouble when making a Citations section for my paper
+
+**Acceptance Criteria**
+1) the user can view premade citations in MLA, APA, and Chicago style
+2) the user can link directly to the original data set for further information
+3) the user can easily view site details relevant for citation so they can manually create a citation
+

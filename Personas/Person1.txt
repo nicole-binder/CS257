@@ -1,0 +1,25 @@
+Name: Agatha Smith
+
+Descriptor: Educator
+
+Quote: "In an increasingly online world, I believe that proper data education is essential for every student."
+
+Who is it? Agatha Smith is a 50-year-old middle school teacher who has taught the eighth grade at her local school in
+Sacramento, CA for the past fifteen years. She previously had a background in communications and statistics, but decided
+after finishing college that she would prefer to teach the younger generation than get a corporate job. 
+
+Goals: Agatha wants to teach students to do basic research and analyze data at a basic level. She feels like it's 
+important to use real data, so that students won't overgeneralize and will be more interested in their results. 
+
+Attitude: Agatha wants a convenient location to pull lots of different data sets pertaining to her state (California) from,
+so that she can give the location to her class and let them pick topics for a statistics project, but she doesn't want them
+to be too difficult to understand, so the eighth graders don't have too much trouble with the topic.
+
+Behavior: Agatha is a long-time browser of the Spurious Correlations website, and loves to keep up with her former students
+via Facebook, but otherwise spends most of her time either working on lesson plans, grading, or working on her long-time hobby
+of welding. It's very important to her that a website be easy to use - she doesn't want to have to spend a lot of effort learning
+to navigate a site, and she doesn't want it to be an impediment for her students - but, as an expert in statistics, she's okay if
+the data presented isn't in a particularly aesthetically pleasing form, so long as it's present and understandable. She tends to 
+spend a long time on her lesson plans, so she generally takes a long time considering the pros and cons of using various websites
+as part of class (if using such a website is required). 
+

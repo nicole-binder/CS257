@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<script src="https://kit.fontawesome.com/03f85af316.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='aboutdata.css') }}>
+        <title>What is America Doing?</title>  
+    </head>
+	
+    <body bgcolor="cadetblue">
+        <header>
+            <nav>
+                <ul class="main-nav">
+					<li><a href="/">HOME</a></li>
+                    <li><a href="/aboutdata">ABOUT THE DATA</a></li>
+                    <li><a href="https://momspaghetti.ytmnd.com/">CONTACT US</a></li>
+                    <li><a href="https://isitchristmas.com/">MORE</a></li>
+                </ul>
+            </nav>
+		</header>
+
+		
+		<div class="wrap">
+				<div class="search">
+					<input type="text" class="searchTerm" placeholder="Search...">
+					<button type="submit" class="searchButton">
+					<i class="fa fa-search"></i>
+					</button>
+				</div>
+		</div>
+			
+		<div class="content">
+			<div class="title">
+				<p class="heading">DATA SOURCES
+					</p>
+				</div>
+			<p>The codebook used for reference is from the 
+				<a href="https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/24943">American Time Use Survey (ATUS), 2003-2010, Multi-Year Data (ICPSR 24943)
+					</a>
+				, while the microdata itself was retrieved from 
+					<a href="https://www.bls.gov/tus/datafiles_my.htm">"American Time Use Survey — Multi-Year Microdata Files"
+						</a> 
+				on 27 April 2020. This data covers a random sample from the entire United States from the years 2003-2018.
+				</p>
+				
+			</div>
+			
+		<div class="content">
+			<div class="title">
+				<p class="heading">MODIFICATIONS
+					</p>
+				</div>
+			<p>Due to limitations on database storage space, the data was modified from its original CSV form as it was downloaded. On 10 May 2020, we used the American Time Use Survey Extract Builder to extract only the eating/drinking, sleeping, and working activity times, along with years and states, from 2014 to 2018. This tool can be found  
+				<a href="https://www.atusdata.org">here.
+					</a>
+				</p>
+				
+			</div>
+		<div class="content">
+			<div class="title">
+				<p class="heading">USAGE AND PRIVACY
+					</p>
+				</div>
+				<p class="final">Participants in the studies used to source the data for this website expect their responses to remain confidential, and the data may not be used to identify specific individuals. As such, this website is to be used as a tool for statistical analysis or research only, and not to make queries about specific individuals (including indirect queries). The full restrictions for the use of the data may be found 
+					<a href="https://www.icpsr.umich.edu/pages/about/tou-violations.html">here</a>.
+					</p> 
+			</div>
+			
+			<footer>
+                <p>Copyright © 2020. Designed and developed by Maanya, Emilia, Cole and Nicole. All rights reserved.</p>
+            </footer>
+			
+		</html>

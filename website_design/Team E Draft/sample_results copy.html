@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<script src="https://kit.fontawesome.com/03f85af316.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="sample_results.css">
+        <title>Time Usage in the United States</title>
+    </head>
+    <body bgcolor="#dfe6e9">
+		<header>
+                <figure class="banner-photo">
+                    <img src="Images/clock_picture_banner.jpg", alt="Header Clock Picture">
+                </figure>
+				<nav>
+					<ul class="main-nav">
+						<li><a href="homepage.html">HOME</a></li>
+						<li><a href="aboutdata.html">ABOUT THE DATA</a></li>
+						<li><a href="#">CONTACT US</a></li>
+						<li><a href="#">MORE</a></li>
+					</ul>
+				</nav>
+			
+			<div class="wrap">
+					<div class="search">
+						<input type="text" class="searchTerm" placeholder="Search...">
+						<button type="submit" class="searchButton">
+						<i class="fa fa-search"></i>
+						</button>
+					</div>
+			</div>
+		</header>
+
+		
+        
+        <div class="header-box">
+            <h1>SAMPLE RESULTS</h1>
+            <p>Home > Explore Data > Individual State</p>
+        </div>
+		
+		<nav>
+			<ul id="local-nav">
+				<li><a class="btn btn-ghost" href="#individual">INDIVIDUAL STATE</a></li>
+				<li><a class="btn btn-ghost" href="#compare">COMPARE STATES</a></li>
+			</ul> 
+		</nav>
+		
+        
+        <div class="data-selection">
+            <h4 id="data">Data Settings</h4>
+            <p class = "data-header">Location</p>
+            <form action="/value">
+  				<label for="state">Choose a state:</label>
+  				<select id="state" name="state">
+    				<option value="massachusetts">MA</option>
+    				<option value="Maine">ME</option>
+    				<option value="Minnesota">MN</option>
+  				</select>
+  				<input type="submit">
+			</form>
+            <p class = "data-header">Data Type</p>
+            <select name="ata" size="4" multiple>
+  				<option value="leisure">Leisure</option>
+  				<option value="work">Work</option>
+  				<option value="recreation">Recreation</option>
+  				<option value="social-life">Social Life</option>
+  				<input type="submit" value="Submit">
+			</select>
+            <p class = "data-header">Time</p>
+            <form action="https://youtu.be/dQw4w9WgXcQ">
+    				<label for="from-time">From:</label><br>
+    				<input type="text" id="from-time" name="from-time" value="2010"><br>
+    				<label for="to-time">To:</label><br>
+    				<input type="text" id="to-time" name="to-time" value="2012"><br><br>
+    				<input type="submit" value="Submit">
+			</form>
+        </div>
+        
+		<div class = "graph">
+            <h2 id = "graph">Time Usage in STATE from DATE1 to DATE2</h2>
+            <figure class="data-graph">
+            	{% block content %}
+    			<table>
+        			<tr><th>Value</th></tr>
+        			{% for mins in stateMinList %}
+            			<tr><td>{{ mins }}</td></tr>
+        			{% endfor %}
+    			</table>
+    			{% endblock %}
+            </figure>
+        </div>
+        
+        <footer>
+            <p>Copyright © 2020. Designed and developed by Maanya, Emilia, Cole and Nicole. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
