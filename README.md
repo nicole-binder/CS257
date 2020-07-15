@@ -1,4 +1,5 @@
-NOTE: Not original repository, not complete. Here for sample code
+NOTE: Not original repository, not complete. Here as sample code
+
 Project for CS257 Software Design and Implementation
 
 **Working Title:**
